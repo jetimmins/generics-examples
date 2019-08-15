@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'com.jetnet'
+version '1'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation "junit:junit:$junitVersion"
+    testImplementation "org.assertj:assertj-core:$assertjVersion"
+}
