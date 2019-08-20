@@ -1,24 +1,28 @@
 package com.jetnet.generics.stack;
 
-public class UnboundedStackImpl<E> implements UnboundedStack<E> {
-    @Override
+import java.util.Collection;
+
+public class UnboundedStack<E> {
     public void push(E element) {
         System.out.println(element + " pushed");
     }
 
-    @Override
     public void pushAll(Iterable<E> elements) {
         for (E e : elements) {
             push(e);
         }
     }
 
-    @Override
     public E pop() {
         return null;
     }
 
-    @Override
+    public void popAllInto(Collection<E> destination) {
+        while(!isEmpty()) {
+            destination.add(pop());
+        }
+    }
+
     public boolean isEmpty() {
         return false;
     }
