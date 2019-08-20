@@ -1,4 +1,4 @@
-#Generics
+# Generics
 ## Why?
 - Compile-time type safety rather than runtime errors
 - Removes clutter of casting
@@ -12,7 +12,7 @@
     - No class literals for generic types and no `instanceof`
     - No generic arrays - covariants vs invariants
 
-##When to use Raw, Object, Wildcard
+## When to use Raw, Object, Wildcard
 - Raw types exist only for backward compatibility and should never be used
 - `List<Object>` is restrictive
 - `List<?>` offers more flexibility especially with bounds - gives covariance and contravariance
@@ -20,7 +20,7 @@
     - GET-PUT / PECS
     - Never for return types
     
-##HTC for parameterised keys
+## HTC for parameterised keys
 - Useful for type safety with variable amount of parameters
     - Database rows
     - ServiceRegistry
